@@ -211,6 +211,7 @@ function build_calendar($month,$year) {//vytvor kalendar
         
    
         $calendar= $calendar . "<form class='jq--form' action='' method='post'>";
+     
         $calendar= $calendar . "<h1 class='text-centre'>Editovací fomulář</h1>";
         $calendar= $calendar . "<div class='input-group mb-3'>";
         $calendar= $calendar . "<div class='input-group-prepend'>";
@@ -244,7 +245,7 @@ function build_calendar($month,$year) {//vytvor kalendar
         if($_GET["id"]!=""){
             $calendar= $calendar . 
             "<a 
-            class='btn  btn-success'  
+            class='btn  btn-warning'  
             href='admin.php?month=".$month.
             "&year=".$year.
             "&idEdit=" . $_GET['idDB'] . 
@@ -257,10 +258,17 @@ function build_calendar($month,$year) {//vytvor kalendar
             "&year=".$year.
             "&deleteID=" . $_GET['idDB'] . 
             "'
-            >Smazat rezervaci</a></form>"; 
+            >Smazat rezervaci</a>
+            "; 
+            $calendar= $calendar .
+            "<a 
+            class='btn btn-secondary ' 
+            href='admin.php?month=".$month.
+            "&year=".$year."'
+            >Zavřít</a></form>"; 
 
         } 
-        $calendar= $calendar . "</div></footer> ";
+        $calendar= $calendar . "</form></div></footer> ";
  
     }
     return  $calendar;

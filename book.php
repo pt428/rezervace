@@ -157,7 +157,9 @@
                                 name="fromDate" 
                                 aria-label="Sizing example input" 
                                 aria-describedby="inputGroup-sizing-lg"
-                                required <?php echo "value='$fromDate'"?>>
+                                value="<?= htmlspecialchars($fromDate)?>"
+                                required  
+                                >
         				</div>  
         				<div class='input-group input-group-lg'>
                                 <span class='input-group-text'>Do</span>
@@ -166,7 +168,9 @@
                             name="toDate" 
                             aria-label="Sizing example input" 
                             aria-describedby="inputGroup-sizing-lg"
-                            required <?php echo "value='$toDate'"?>>
+                            value="<?= htmlspecialchars($toDate)?>"
+                            required  
+                            >
         				</div>  
                         <div class='input-group input-group-lg'>
                                 <span class='input-group-text'>Jméno a příjmení</span>
@@ -175,7 +179,9 @@
                             name="name" 
                             aria-label="Sizing example input" 
                             aria-describedby="inputGroup-sizing-lg"
-                            required <?php echo "value='$name'"?>>
+                            value="<?= htmlspecialchars($name)?>"
+                            required  
+                            >
         				</div>    
                         <div class='input-group input-group-lg'>
                                 <span class='input-group-text'>Ulice a č.p.</span>
@@ -184,7 +190,9 @@
                             name="address"  
                             aria-label="Sizing example input" 
                             aria-describedby="inputGroup-sizing-lg"
-                            required <?php echo "value='$address'"?>>
+                            value="<?= htmlspecialchars($address)?>"
+                            required 
+                            >
         				</div>
                         <div class='input-group input-group-lg'>
                                 <span class='input-group-text'>Město</span>
@@ -193,7 +201,9 @@
                             name="city" 
                             aria-label="Sizing example input" 
                             aria-describedby="inputGroup-sizing-lg"
-                            required <?php echo "value='$city'"?>>
+                            value="<?= htmlspecialchars($city)?>"
+                            required 
+                            >
         				</div> 			
                         <div class='input-group input-group-lg'>
                                 <span class='input-group-text'>Email</span>
@@ -202,7 +212,9 @@
                             name="email" 
                             aria-label="Sizing example input" 
                             aria-describedby="inputGroup-sizing-lg"
-                            required <?php echo "value='$email'"?>>
+                            value="<?= htmlspecialchars($email)?>"
+                            required 
+                            >
         				</div>
                         <div class='input-group input-group-lg'>
                                 <span class='input-group-text'>Telefon</span>
@@ -211,7 +223,9 @@
                             name="phone" 
                             aria-label="Sizing example input" 
                             aria-describedby="inputGroup-sizing-lg"
-                            required <?php echo "value='$phone'"?>>
+                            value="<?= htmlspecialchars($phone)?>"
+                            required 
+                            >
         				</div>        				   				
                         <div class='input-group input-group-lg'>
                                 <span class='input-group-text'>Účel pronájmu</span>
@@ -219,7 +233,8 @@
                             name="note" rows="4" cols="50" 
                             aria-label="Sizing example input" 
                             aria-describedby="inputGroup-sizing-lg"
-                            required></textarea <?php echo "value='$note'"?>>
+                            value=""
+                            required><?= htmlspecialchars($note)?></textarea>
         				</div>   
                         <div class="d-grid gap-2"> 	
                         <p>Odesláním formuláře souhlasíte, aby provozovatel těchto stránek Obec&nbsp;Malenovice zpracovávala Vaše vypsané osobní údaje dle <a href="https://www.malenovice.eu/urad/povinne-informace/?ftresult=GDPR">GDPR</a> </p>

@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if($_POST["user"]===$user[0] and $_POST["pass"]===$pass[0]){
         session_start();
         $_SESSION["admin"]=1;
-        header("Location:http://localhost/www/rezervacnisystem2/admin.php ");
+        header("Location:./admin.php ");
         // header("Location:https://obecnidum.unas.cz//admin.php");
 
 
